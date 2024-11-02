@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MzGxlSsPCBiXWvcrRlA+Q7UDdo9tHt6eGj6yA2Yr4vxp0HiPmXWN/VzGqwCvuzcTBU9+HduVSccV5pj1Lt6SKA==",
+  "dgSpecHash": "xvbZGSQ49G8rHzyhwHVyQAfJYCYubkixj9+SN3sqfPsph3CZWaR2atgUMbO2MnyU87im+/4T9EdGh9bP0R3udQ==",
   "success": true,
-  "projectFilePath": "/home/lucas/code/helloworld/helloworld.csproj",
+  "projectFilePath": "/home/lucas/helloWorld_c-/helloworld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
