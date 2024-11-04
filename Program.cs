@@ -9,10 +9,15 @@ Console.WriteLine(aFriend);
 Console.WriteLine("Hello " + aFriend);
 Console.WriteLine($"Hello {aFriend}");
 
-string firstFriend = "Maria";
-string secondFriend = "Sage";
+string firstFriend = "     Maria     ";
+
+firstFriend = firstFriend.Trim();
+
+string secondFriend = "     Sage     ";
 
 // Interpolação de strings
-Console.WriteLine($"My friends are {firstFriend} and {secondFriend}");
+Console.WriteLine($"My friends are {firstFriend} and {secondFriend.Trim()}");
 Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
 Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
+
+
