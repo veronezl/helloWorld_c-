@@ -70,4 +70,4 @@ $RECICLAGEM.BIN/
 # Atalhos do Windows
 *.lnk
 
-# Fim de https://www.toptal.com/developers/gitignore/api/linux,visualstudiocode,windows,dotnetcore
+# Fim de https://www.toptal.com/developers/gitignore/api/linux,visualstudiocode,windows,dotnetcore/obj/
