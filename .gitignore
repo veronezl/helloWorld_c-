@@ -5,6 +5,8 @@
 # Pastas de compilação do .NET Core
 lata/
 objeto/
+/bin/
+/obj/
 
 # Localizações comuns de módulos de nós
 /módulos_de_nó
