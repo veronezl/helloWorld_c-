@@ -1,4 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+// TRABALHANDO COM STRINGS
+
+/*
 using System;
 
 Console.WriteLine("Hello, World!");
@@ -34,5 +38,26 @@ System.Console.WriteLine(firstFriend.Substring(0, 4)); // Pegar 4 caracteres a p
 System.Console.WriteLine(firstFriend.Substring(4)); // Pegar todos os caracteres a partir
 System.Console.WriteLine(firstFriend.Split('a')); // Divide a string em substrings
 System.Console.WriteLine(firstFriend.Split('a')[0]); // Pegar a primeira substring
+*/
+
+// TRABALHANDO COM NÚMEROS EM C#
+
+int a = 2100000000;
+int b = 2100000000;
+long c = (long)a + (long)b;
+//long d = checked(a + b);
+
+System.Console.WriteLine(c);
+//System.Console.WriteLine(d);
+
+double e = 42.1;
+float f = 38.2F;
+double g = e + f;
+
+System.Console.WriteLine($"The answer is {g:F3}");
+
+
+
+
 
 
