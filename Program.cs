@@ -60,7 +60,7 @@ System.Console.WriteLine($"The answer is {g:F3}");
 
 // TRABALHNDO COM IF
 
-
+/*
 int a = 5;
 int b = 3;
 int c = 4;
@@ -88,6 +88,31 @@ else
     Console.WriteLine("The answer is not greater than 10");
     Console.WriteLine("And the first number is not equal to the second");
 }
+*/
+
+// TRABALHANDO COM LOOP WHILE
+
+int counter = 0;
+int outroCounter = 0;
+
+while (counter < 10)
+{
+    Console.WriteLine("Counter " + counter);
+    Console.WriteLine("OutroCounter " + outroCounter);
+    counter++;
+    outroCounter = counter; // Incrementa outroCounter com o valor atual de counter
+}
+
+int numero;
+
+do
+{
+    Console.Write("Digite um número (0 para sair): ");
+    numero = int.Parse(Console.ReadLine());
+    Console.WriteLine("Você digitou: " + numero);
+} while (numero != 0);
+
+Console.WriteLine("Programa finalizado.");
 
 
 
