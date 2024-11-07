@@ -92,6 +92,7 @@ else
 
 // TRABALHANDO COM LOOP WHILE
 
+/*
 int counter = 0;
 int outroCounter = 0;
 
@@ -113,7 +114,45 @@ do
 } while (numero != 0);
 
 Console.WriteLine("Programa finalizado.");
+*/
 
+// TRABALHANDO COM LOOP FOR
+
+/*
+for (
+     int i = 0;     // Initialize (start)
+     i < 5;         // Conditional
+     i++            // Interation (increment)
+    )
+{
+    if (i != 3)
+    {
+        Console.WriteLine(i);
+    }
+}
+
+for (int linha = 1; linha < 11; linha++)
+{
+  for (char coluna = 'a'; coluna < 'k'; coluna++)
+  {
+    Console.WriteLine($"The cell is ({linha}, {coluna})");
+  }
+}
+
+int soma = 0;
+
+for(int i = 0; i <= 20; i++)
+{
+    if(i % 3 == 0)
+    {
+        soma += i;
+    }
+}
+
+Console.WriteLine("A soma de todos os inteiros de 1 a 20 devisíveis por 3 é: " + soma);
+*/
+
+// TRABALHANDO COM LISTAS
 
 
 
