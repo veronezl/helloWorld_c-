@@ -154,5 +154,35 @@ Console.WriteLine("A soma de todos os inteiros de 1 a 20 devisíveis por 3 é: "
 
 // TRABALHANDO COM LISTAS
 
+/*
+var names = new List<string> { "Scott", "Ana", "Felipe"};
 
+names.Add("David");
+names.Add("Damian");
+names.Add("Maria");
 
+foreach (var name in names)
+{
+    System.Console.WriteLine($"Hello {name.ToUpper()}!");
+}
+
+System.Console.WriteLine(names[0]);
+System.Console.WriteLine(names[2]);
+System.Console.WriteLine(names[^2]);
+System.Console.WriteLine(names.Count-1);
+System.Console.WriteLine(names.Contains("Felipe"));
+System.Console.WriteLine(names.IndexOf("Felipe"));
+System.Console.WriteLine(names.IndexOf("Felipe", 1));
+System.Console.WriteLine(names.LastIndexOf("Felipe"));
+
+var names02 = new string[] { "Lucas", "Cláudia", "Ronaldo"};
+
+System.Console.WriteLine(names02);
+
+names02 = [..names02, "Ricardo"];
+
+foreach (var name02 in names02)
+{
+    System.Console.WriteLine($"Hello {name02.ToUpper()}!");
+}
+*/
