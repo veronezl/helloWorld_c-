@@ -161,6 +161,8 @@ names.Add("David");
 names.Add("Damian");
 names.Add("Maria");
 
+names.Sort();
+
 foreach (var name in names)
 {
     System.Console.WriteLine($"Hello {name.ToUpper()}!");
@@ -174,7 +176,17 @@ System.Console.WriteLine(names.Contains("Felipe"));
 System.Console.WriteLine(names.IndexOf("Felipe"));
 System.Console.WriteLine(names.IndexOf("Felipe", 1));
 System.Console.WriteLine(names.LastIndexOf("Felipe"));
+*/
 
+var numbers = new List<int> { 45, 56, 99, 48, 67, 78 };
+
+System.Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+numbers.Sort();
+System.Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+
+// TRABALHANDO COM ARRAY
+
+/*
 var names02 = new string[] { "Lucas", "Cláudia", "Ronaldo"};
 
 System.Console.WriteLine(names02);
@@ -186,3 +198,4 @@ foreach (var name02 in names02)
     System.Console.WriteLine($"Hello {name02.ToUpper()}!");
 }
 */
+
