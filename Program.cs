@@ -178,11 +178,13 @@ System.Console.WriteLine(names.IndexOf("Felipe", 1));
 System.Console.WriteLine(names.LastIndexOf("Felipe"));
 */
 
+/*
 var numbers = new List<int> { 45, 56, 99, 48, 67, 78 };
 
 System.Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
 numbers.Sort();
 System.Console.WriteLine($"I found 99 at index {numbers.IndexOf(99)}");
+*/
 
 // TRABALHANDO COM ARRAY
 
@@ -198,4 +200,53 @@ foreach (var name02 in names02)
     System.Console.WriteLine($"Hello {name02.ToUpper()}!");
 }
 */
+
+// TRABALHANDO COM LINQ
+
+// Specify the data source.
+int[] scores = [97, 92, 81, 60];
+
+// Define the query expression.
+IEnumerable<int> scoreQuery =
+    from score in scores
+    where score > 80
+    select score;
+
+// Execute the query.
+foreach (var i in scoreQuery)
+{
+    Console.Write(i + " ");
+}
+
+// Output: 97 92 81
+
+
+// Fonte de dados: uma lista de números
+System.Console.WriteLine();
+List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+// Definir a consulta: selecionar apenas números pares
+var evenNumbers = from num in numbers
+                  where num % 2 == 0
+                  select num;
+
+// Executar a consulta: iterar sobre os resultados
+Console.WriteLine("Números pares:");
+foreach (var num in evenNumbers)
+{
+    Console.WriteLine(num);
+}
+
+// MESMO CÓDIGO ACIMA, PORÉM MAIS COMPACTO
+
+var evennNumbers = numbers.Where(num => num % 2 == 0);
+
+foreach (var num in evennNumbers)
+{
+    Console.WriteLine(num);
+}
+
+
+
+
 
