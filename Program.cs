@@ -226,6 +226,7 @@ foreach (var i in scoreQuery)
 
 // Specify the data source.
 //int[] scores = [ 3, 45, 82, 97, 92, 100, 81, 60];
+/*
 List<int> scores = [ 3, 45, 82, 97, 92, 100, 81, 60];
 
 // Define the query expression.
@@ -235,12 +236,27 @@ IEnumerable<string> scoreQuery =
     orderby score descending
     select $"The score is {score}";
 
+    //List<string> myScore = scoreQuery.ToList();
+
+    //System.Console.WriteLine(scoreQuery.Count()); -> Conta os números selecionados
+
+// Outra forma de escrevero o mesmo código acima
+
+var scoreQuery2 = scores.Where(s => s > 80).
+OrderByDescending(s => s);
+
 // Execute the query.
 foreach (string s in scoreQuery)
 {
     Console.WriteLine(s);
 }
 
+// Execute the query.
+foreach (int i in scoreQuery2)
+{
+    Console.WriteLine(i);
+}
+*/
 
 // Fonte de dados: uma lista de números
 /*
