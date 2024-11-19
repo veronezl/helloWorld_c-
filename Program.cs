@@ -203,13 +203,16 @@ foreach (var name02 in names02)
 
 // TRABALHANDO COM LINQ
 
+/*
 // Specify the data source.
-int[] scores = [97, 92, 81, 60];
+//int[] scores = [ 3, 45, 82, 97, 92, 100, 81, 60];
+List<int> scores = [ 3, 45, 82, 97, 92, 100, 81, 60];
 
 // Define the query expression.
 IEnumerable<int> scoreQuery =
     from score in scores
     where score > 80
+    orderby score descending
     select score;
 
 // Execute the query.
@@ -217,11 +220,30 @@ foreach (var i in scoreQuery)
 {
     Console.Write(i + " ");
 }
+*/
 
-// Output: 97 92 81
+// LINQ COM STRING
+
+// Specify the data source.
+//int[] scores = [ 3, 45, 82, 97, 92, 100, 81, 60];
+List<int> scores = [ 3, 45, 82, 97, 92, 100, 81, 60];
+
+// Define the query expression.
+IEnumerable<string> scoreQuery =
+    from score in scores
+    where score > 80
+    orderby score descending
+    select $"The score is {score}";
+
+// Execute the query.
+foreach (string s in scoreQuery)
+{
+    Console.WriteLine(s);
+}
 
 
 // Fonte de dados: uma lista de números
+/*
 System.Console.WriteLine();
 List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
@@ -236,16 +258,17 @@ foreach (var num in evenNumbers)
 {
     Console.WriteLine(num);
 }
+*/
 
 // MESMO CÓDIGO ACIMA, PORÉM MAIS COMPACTO
-
+/*
 var evennNumbers = numbers.Where(num => num % 2 == 0);
 
 foreach (var num in evennNumbers)
 {
     Console.WriteLine(num);
 }
-
+*/
 
 
 
