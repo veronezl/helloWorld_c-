@@ -299,6 +299,22 @@ internal class Program
         List<Person> people = [p1, p2];
 
         System.Console.WriteLine(people.Count);
+
+        p1.Pets.Add(new Dog("Fred"));
+        p1.Pets.Add(new Dog("Barney"));
+
+        p2.Pets.Add(new Cat("Beyonce"));
+
+        List<Person> people1 = [ p1, p2];
+
+        foreach( var person in people1)
+        {
+            System.Console.WriteLine($"{person}");
+            foreach( var  pet in person.Pets)
+            {
+                System.Console.WriteLine($"    {pet}");
+            }
+        }
     }
 }
 
@@ -310,4 +326,37 @@ public class Person(string first, string last, DateOnly birthday)
 
     public DateOnly Birthday { get; } = birthday;
 
+    public List<Pet> Pets { get;} = new();
+
+    public override string ToString()
+    {
+        return $"Human {First} {Last}";
+    }
+
 }
+
+public abstract class Pet( string firstname)
+{
+    public string Firstname { get; } = firstname;
+
+    public abstract string MakeNoise();
+
+    public override string ToString()
+    {
+        return $"{Firstname} and I am a {GetType().Name} and I {MakeNoise()}";
+    }
+}
+
+public class Cat(string firstname) : Pet(firstname)
+{
+    public override string MakeNoise() => "meow";
+
+}
+
+public class Dog(string firstname) : Pet(firstname)
+{
+    public override string MakeNoise () => "bark";
+}
+
+
+
