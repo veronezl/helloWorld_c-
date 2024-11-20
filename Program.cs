@@ -2,9 +2,10 @@
 
 // TRABALHANDO COM STRINGS
 
-/*
+
 using System;
 
+/*
 Console.WriteLine("Hello, World!");
 
 string aFriend = "Bill";
@@ -286,6 +287,27 @@ foreach (var num in evennNumbers)
 }
 */
 
+// TRABALHANDO COM OOP
 
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        var p1 = new Person("Lucas", "Veronez", new DateOnly(1982, 12, 11));
+        var p2 = new Person("Anderson", "Silva", new DateOnly(1981, 02, 01));
 
+        List<Person> people = [p1, p2];
 
+        System.Console.WriteLine(people.Count);
+    }
+}
+
+public class Person(string first, string last, DateOnly birthday)
+{
+    public string First { get; } = first;
+
+    public string Last { get; } = last;
+
+    public DateOnly Birthday { get; } = birthday;
+
+}
