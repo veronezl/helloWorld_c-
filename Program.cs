@@ -154,5 +154,3 @@ Console.WriteLine("A soma de todos os inteiros de 1 a 20 devisíveis por 3 é: "
 
 // TRABALHANDO COM LISTAS
 
-
-
