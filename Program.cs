@@ -1,10 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 
 // TRABALHANDO COM STRINGS
 
-/*
+
 using System;
 
+/*
 Console.WriteLine("Hello, World!");
 
 string aFriend = "Bill";
@@ -153,4 +154,6 @@ Console.WriteLine("A soma de todos os inteiros de 1 a 20 devisíveis por 3 é: "
 */
 
 // TRABALHANDO COM LISTAS
+
+
 
